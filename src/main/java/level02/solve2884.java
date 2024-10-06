@@ -13,9 +13,8 @@ public class solve2884 {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
-        if(b>45){
+        if(b>=45){
             b = b-45;
-            System.out.println(a+" "+b);
         }else{
             if(a<=0){
                 a=23;
@@ -23,7 +22,7 @@ public class solve2884 {
                 a=a-1;
             }
             b= 60-(45-b);
-            System.out.println(a+" "+b);
         }
+        System.out.println(a+" "+b);
     }
 }
