@@ -1,7 +1,7 @@
 package level06;
 
 import java.io.*;
-public class solv10988 {
+public class solve10988 {
     public static void main(String[] args) throws IOException {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
