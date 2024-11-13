@@ -1,4 +1,4 @@
-package hh99_1week.basic;
+package hh99_1week.plus;
 
 import java.io.*;
 import java.util.*;
