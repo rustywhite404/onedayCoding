@@ -1,4 +1,4 @@
-package hh99_1week;
+package hh99_1week.basic;
 
 import java.io.*;
 import java.util.StringTokenizer;
