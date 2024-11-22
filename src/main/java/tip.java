@@ -1,5 +1,3 @@
-package hh99_1week;
-
 import java.io.*;
 import java.util.Arrays;
 import java.util.HashMap;
