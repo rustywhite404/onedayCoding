@@ -1,8 +1,5 @@
 import java.io.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class tip {
     //알고리즘 공부를 하며 유용하게 사용한 메서드들
@@ -49,20 +46,50 @@ public class tip {
         //3. String.join
         //자바11부터 사용할 수 있다.
         //String.join("구분기호", 문자열) 의 형태로, 구분 기호를 사용하여 문자열을 연결 할 수 있다.
-        String[] strlist = new String[]{"aaa","bbb","ccc","ddd"};
-        String a = "aaa";
-        String b = "bbb";
-        String c = "ccc";
-        String word1 = String.join("*",strlist);
-        String word2 = String.join("@",a,b,c);
+//        String[] strlist = new String[]{"aaa","bbb","ccc","ddd"};
+//        String a = "aaa";
+//        String b = "bbb";
+//        String c = "ccc";
+//        String word1 = String.join("*",strlist);
+//        String word2 = String.join("@",a,b,c);
+//
+//        bw.write(word1);
+//        bw.newLine();
+//        bw.write(word2);
+//        //결과값 :
+//        //aaa*bbb*ccc*ddd
+//        //aaa@bbb@ccc
+//        bw.flush();
+//        bw.close();
 
-        bw.write(word1);
-        bw.newLine();
-        bw.write(word2);
-        //결과값 :
-        //aaa*bbb*ccc*ddd
-        //aaa@bbb@ccc
-        bw.flush();
-        bw.close();
+        //4. PriorityQueue에서 Map을 정렬해야 할 때
+        // PriorityQueue는 Map 자체를 정렬할 수 없기 때문에 Map.Entry 객체를 제네릭으로 받아서 삽입하는데,
+        // 이렇게 만든 우선순위 큐에 데이터를 삽입하려면 별도의 클래스 정의가 필요하다.
+        // 먼저 클래스를 정의하고
+//        class University {
+//            String name; // 대학 이름
+//            int score;   // 점수
+//
+//            // 생성자
+//            public University(String name, int score) {
+//                this.name = name;
+//                this.score = score;
+//            }
+//        }
+//
+//        //이렇게 사용한다.
+//        PriorityQueue<University> queue = new PriorityQueue<>();
+//        // 데이터 삽입
+//        queue.add(new University("Harvard", 95));
+
+        //이 때, 클래스를 정의하지 않고 SimpleEntry를 이용해서 더 간단하게 표현할 수 있다.
+        //AbstractMap.SimpleEntry<K, V>는 자바에서 제공하는 간단한 키-값 쌍 표현 클래스이다.
+        //queue.add(new AbstractMap.SimpleEntry<>(st.nextToken(), Integer.parseInt(st.nextToken())));
+        //이렇게 사용하면 간단하고 깔끔하게 데이터 쌍 관리가 가능하다.
+        // 단, 이 클래스가 다른 곳에서도 재사용된다면 클래스로 정의해서 관리하는 게 낫다.
+
+
+
+
     }
 }

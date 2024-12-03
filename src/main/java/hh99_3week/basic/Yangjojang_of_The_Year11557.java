@@ -1,10 +1,7 @@
 package hh99_3week.basic;
 
 import java.io.*;
-import java.util.AbstractMap;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Yangjojang_of_The_Year11557 {
     /*
