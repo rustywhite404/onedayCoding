@@ -2,7 +2,6 @@ package hh99_4week.advance;
 
 import java.io.*;
 import java.util.Arrays;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class 좋다1253 {
