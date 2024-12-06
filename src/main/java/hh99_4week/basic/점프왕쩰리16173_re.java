@@ -30,38 +30,28 @@ public class 점프왕쩰리16173_re {
 
         //방문한 자리 저장
         boolean[][] visited = new boolean[depth][depth];
-
         visited[0][0] = true; //시작점 변경
-
         boolean flag = false;
 
         for (int i = 0; i < depth && !flag; i++) {
-
             for (int j = 0; j < depth && !flag; j++) {
-
                 int current = area[i][j];
 
                 //배열의 값이 0이면 continue;
                 if (current == 0 || !visited[i][j]) {
                     continue;
                 }
-
-
                 if (current == -1) {
                     flag = true; //목표 도달
                     break;
                 }
-
                 if (j + current < depth && !visited[i][j + current]) { //영역 안쪽이거나 아직 밟지 않은 곳이면
                     visited[i][j + current] = true;
                 }
-
                 if (i + current < depth && !visited[i + current][j]) {
                     visited[i + current][j] = true;
                 }
-
             }
-
         }
         System.out.println(flag ? "HaruHaru" : "Hing");
 
